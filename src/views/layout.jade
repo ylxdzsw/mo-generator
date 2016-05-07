@@ -1,0 +1,34 @@
+mixin require(file)
+    -var suffix = file.split('.').slice(-1)[0]
+    case suffix
+        when 'js'
+            script(src="scripts/#{file}")
+        when 'css'
+            link(rel='stylesheet', href="styles/#{file}")
+
+mixin lib(file)
+    -var suffix = file.split('.').slice(-1)[0]
+    case suffix
+        when 'js'
+            script(src="lib/#{file}")
+        when 'css'
+            link(rel='stylesheet', href="lib/#{file}")
+
+doctype html
+html(lang='zh-cn')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content="width=device-width, initial-scale=1, maximum-scale=1")
+        link(rel='stylesheet', href="styles/layout.css")
+        script(src="lib/underscore.js")
+        script(src="lib/zepto.js")
+        script(src="scripts/layout.js")
+        block head
+        block title
+            title mo-generator
+    body
+        div#modal
+            block modal
+        div#content.hidden
+            block content
+

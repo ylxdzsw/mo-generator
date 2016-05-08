@@ -1,0 +1,1 @@
+(function(){$(function(){return setTimeout(function(){return $("#content").removeClass("hidden")},0)})}).call(this);

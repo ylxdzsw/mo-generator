@@ -5,7 +5,7 @@ $ ->
             gifHeight: 89
             images: ("images/#{i}.png" for i in [1..13])
             numFrames: 13
-            text: '膜'+$("#input>input").val()
+            text: '膜'+$("#name").val()
             fontSize: '16px'
             fontWeight: 'bold'
             fontColor: 'black'

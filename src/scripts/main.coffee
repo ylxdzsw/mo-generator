@@ -10,7 +10,6 @@ $ ->
             fontWeight: 'bold'
             fontColor: 'black'
             resizeFont: true
-        console.log(options)
         gifshot.createGIF options, (obj) ->
             return if obj.error
             $("#output").attr 'src', obj.image

@@ -1,4 +1,16 @@
 extends layout.jade
 
+append head
+    +lib("gifshot.js")
+    +require("main.css")
+    +require("main.js")
+
 block content
-    h1 mo
+    span#input
+        label(for="name") 少年哟，你要膜谁?
+        input
+        button 膜
+    br
+    img#output
+
+ // TODO：可以在onchange的时候直接膜，不需要按钮

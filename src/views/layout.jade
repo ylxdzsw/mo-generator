@@ -19,10 +19,10 @@ html(lang='zh-cn')
     head
         meta(charset='utf-8')
         meta(name='viewport', content="width=device-width, initial-scale=1, maximum-scale=1")
-        link(rel='stylesheet', href="styles/layout.css")
-        script(src="lib/underscore.js")
-        script(src="lib/zepto.js")
-        script(src="scripts/layout.js")
+        +lib("underscore.js")
+        +lib("zepto.js")
+        +require("layout.css")
+        +require("layout.js")
         block head
         block title
             title mo-generator

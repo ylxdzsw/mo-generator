@@ -1,6 +1,9 @@
 mo-generator
 ============
 
+![screenshot](doc/screenshot.PNG)
+![result](doc/result.gif)
+
 ### build
 
 ```

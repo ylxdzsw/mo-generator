@@ -6,7 +6,7 @@ $ ->
             images: ("images/#{i}.png" for i in [1..13])
             numFrames: 13
             text: '膜'+$("#input>input").val()
-            fontSize: '18px'
+            fontSize: '16px'
             fontWeight: 'bold'
             fontColor: 'black'
             resizeFont: true
